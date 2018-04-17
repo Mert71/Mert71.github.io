@@ -1,6 +1,7 @@
 * {
   margin: 0%;
   padding: 0%;
+  font-style: verdana;
 }
 
 body {
@@ -24,7 +25,7 @@ body {
 .topnav {
     background-color: #143548;
     overflow: hidden;
-    transition: 0.3s ease;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -36,6 +37,7 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    transition: 0.5s ease;
 }
 
 /* Add an active class to highlight the current page */
@@ -47,12 +49,14 @@ body {
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
+    transition: 0.5s ease;
 }
 
 /* Dropdown container - needed to position the dropdown content */
 .dropdown {
     float: left;
     overflow: hidden;
+    transition: 0.5s ease;
 }
 
 /* Style the dropdown button to fit inside the topnav */
@@ -65,6 +69,7 @@ body {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    transition: 0.5s ease;
 }
 
 /* Style the dropdown content (hidden by default) */
@@ -75,6 +80,7 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    transition: 0.5s ease;
 }
 
 /* Style the links inside the dropdown */
@@ -172,7 +178,7 @@ body {
 .navbar li ul {
   height: 0px;
   overflow: hidden;
-  transition: 0.5s ease;
+
 }
 .navbar li:hover ul {
     height: 160px;
@@ -181,28 +187,6 @@ body {
 /** Media Querry
 Hier voeg ik de media Querry toe om de navbar mobile responsive te maken
 */
-@media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
-  .navbar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
 
 
 
@@ -214,9 +198,8 @@ Hier voeg ik de media Querry toe om de navbar mobile responsive te maken
   height: 400px;
   width: 400px;
   background-color: #143548;
-  margin-right: 105px;
-  margin-left: 60px;
-  margin-bottom: 25px;
+  margin-left: 17%;
+  margin-bottom: 3%;
   opacity: .8;
   color: white;
   border-radius: 20%;
@@ -237,7 +220,7 @@ Hier voeg ik de media Querry toe om de navbar mobile responsive te maken
 .column{
   display:flex;
   flex-direction: column;
-  padding-top: 115px;
+  padding-top: 135px;
 
 
 }
